@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","paths":{"/items":{"get":{"description":"Results are always returned in ascending identifier order. Existing clients may rely on this ordering guarantee.","responses":{"200":{"description":"ok"}}}}}}

@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","paths":{"/items":{"get":{"description":"Results may be returned in any order. No ordering guarantee is provided to clients.","responses":{"200":{"description":"ok"}}}}}}
