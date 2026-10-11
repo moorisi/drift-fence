@@ -1,0 +1,121 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract": "0xf566F45Fcb44C6e44ba149003bA77ACee9b0f3D6",
+  "transaction": "0x4a224704da9974b0b5bc758069b0a9a9e1fcad890e1552f50109ac36e4887b2a",
+  "expected_status": "REVIEW",
+  "observed_status": "REVIEW",
+  "inputs": [
+    {
+      "url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old-review.json",
+      "sha256": "baa951c573859bce13a58730260aedf60d531ffa1f0e92c4c3dfa43a7707e3bc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/malformed.json",
+      "sha256": "2787c9cf6e6053c8fe18b56c3b6606dcd15190621b91ace3df3657287995cd70"
+    }
+  ],
+  "state_before": [
+    {
+      "analysis": {
+        "breaking": [],
+        "evidence_new": [
+          "/paths/~1items/get/responses/200",
+          "/paths/~1items/get/responses/404"
+        ],
+        "evidence_old": [
+          "/paths/~1items/get/responses/200"
+        ],
+        "non_breaking": [
+          "Added optional 404 response to GET /items"
+        ],
+        "status": "COMPATIBLE"
+      },
+      "new_hash": "9aa3c5b5a37d5f8eda8a301346d1cf567b8dfa105f5b768e15c7ef4975f8c43b",
+      "new_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/compatible.json",
+      "old_hash": "37ae8cf434df82b1c6fed92ccb60502c54daed766d388ec506ac9a230c3f09fd",
+      "old_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old.json"
+    },
+    {
+      "analysis": {
+        "breaking": [
+          "Operation GET /items removed"
+        ],
+        "evidence_new": [
+          "/paths/~1items/post"
+        ],
+        "evidence_old": [
+          "/paths/~1items/get"
+        ],
+        "non_breaking": [
+          "Operation POST /items added"
+        ],
+        "status": "BREAKING"
+      },
+      "new_hash": "172d0987fad25945c9b3f80981465438d3e5bcc36b854cd9ad49de68c8233944",
+      "new_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/breaking.json",
+      "old_hash": "3cd01d8c967da5cf41adf4cfb2fb907bf208d59c8b94483a9c3ad28e6c49b73f",
+      "old_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old-breaking.json"
+    }
+  ],
+  "state": [
+    {
+      "analysis": {
+        "breaking": [],
+        "evidence_new": [
+          "/paths/~1items/get/responses/200",
+          "/paths/~1items/get/responses/404"
+        ],
+        "evidence_old": [
+          "/paths/~1items/get/responses/200"
+        ],
+        "non_breaking": [
+          "Added optional 404 response to GET /items"
+        ],
+        "status": "COMPATIBLE"
+      },
+      "new_hash": "9aa3c5b5a37d5f8eda8a301346d1cf567b8dfa105f5b768e15c7ef4975f8c43b",
+      "new_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/compatible.json",
+      "old_hash": "37ae8cf434df82b1c6fed92ccb60502c54daed766d388ec506ac9a230c3f09fd",
+      "old_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old.json"
+    },
+    {
+      "analysis": {
+        "breaking": [
+          "Operation GET /items removed"
+        ],
+        "evidence_new": [
+          "/paths/~1items/post"
+        ],
+        "evidence_old": [
+          "/paths/~1items/get"
+        ],
+        "non_breaking": [
+          "Operation POST /items added"
+        ],
+        "status": "BREAKING"
+      },
+      "new_hash": "172d0987fad25945c9b3f80981465438d3e5bcc36b854cd9ad49de68c8233944",
+      "new_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/breaking.json",
+      "old_hash": "3cd01d8c967da5cf41adf4cfb2fb907bf208d59c8b94483a9c3ad28e6c49b73f",
+      "old_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old-breaking.json"
+    },
+    {
+      "analysis": {
+        "breaking": [],
+        "evidence_new": [
+          "/paths/~1items/get/responses"
+        ],
+        "evidence_old": [
+          "/paths/~1items/get/responses/200"
+        ],
+        "non_breaking": [],
+        "status": "REVIEW"
+      },
+      "new_hash": "2787c9cf6e6053c8fe18b56c3b6606dcd15190621b91ace3df3657287995cd70",
+      "new_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/malformed.json",
+      "old_hash": "baa951c573859bce13a58730260aedf60d531ffa1f0e92c4c3dfa43a7707e3bc",
+      "old_url": "https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/old-review.json"
+    }
+  ]
+}

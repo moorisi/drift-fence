@@ -1,0 +1,19 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract": "0x6F3890d12b15a07eCCED350c15028ab9c49598f2",
+  "transaction": "0xc47c5c0e7a8115d854947e074d36ccf97143e0aa5af8017c5a1fd4f01351e8c1",
+  "expected_status": "COMPATIBLE",
+  "inputs": [
+    {
+      "url": "https://raw.githubusercontent.com/moorisi/drift-fence/a5de5d1b5456d036d5a9daf56b5fc218c4c95772/schemas/old.json",
+      "sha256": "37ae8cf434df82b1c6fed92ccb60502c54daed766d388ec506ac9a230c3f09fd"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/moorisi/drift-fence/a5de5d1b5456d036d5a9daf56b5fc218c4c95772/schemas/compatible.json",
+      "sha256": "9aa3c5b5a37d5f8eda8a301346d1cf567b8dfa105f5b768e15c7ef4975f8c43b"
+    }
+  ],
+  "state_before": [],
+  "state": []
+}

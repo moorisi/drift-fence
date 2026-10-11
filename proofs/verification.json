@@ -1,0 +1,49 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract": "0xf566F45Fcb44C6e44ba149003bA77ACee9b0f3D6",
+  "source_sha256": "93d361788865eff12fabbdb4242ef0bf95b15a7c2350e0bbcff52319e7cd6f6b",
+  "exact_source_match": true,
+  "live_receipts_and_state_match": true,
+  "verified_at": "2026-10-11T21:36:33.137Z",
+  "deployment": {
+    "hash": "0xbca4e6cde7d4a68508003b3c862e58dca1714457abe4f81a2f4b4c1cfbecb69b",
+    "agree": 3,
+    "disagree": 0,
+    "idle": 2
+  },
+  "scenarios": [
+    {
+      "name": "v2-compatible",
+      "status": "COMPATIBLE",
+      "hash": "0x41a3a4be1526e3ed4b01922e3f8fd07faa71f2d769c0d0a7570fcfc889550d60",
+      "agree": 3,
+      "disagree": 1,
+      "idle": 1
+    },
+    {
+      "name": "v2-breaking",
+      "status": "BREAKING",
+      "hash": "0x3babbe0882ef968f3bf63583f9e5c56b9ab4ea22da6c38bbeeacd1df30614fa8",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2
+    },
+    {
+      "name": "v2-review",
+      "status": "REVIEW",
+      "hash": "0x4a224704da9974b0b5bc758069b0a9a9e1fcad890e1552f50109ac36e4887b2a",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2
+    },
+    {
+      "name": "v2-description",
+      "status": "BREAKING",
+      "hash": "0x05133d5f1ccd2d8a88f74b7789df81cf167501c83e39cc98ef54fbb89842eba9",
+      "agree": 3,
+      "disagree": 0,
+      "idle": 2
+    }
+  ]
+}

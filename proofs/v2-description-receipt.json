@@ -1,0 +1,189 @@
+{
+  "hash": "0x05133d5f1ccd2d8a88f74b7789df81cf167501c83e39cc98ef54fbb89842eba9",
+  "from_address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+  "to_address": "0xf566F45Fcb44C6e44ba149003bA77ACee9b0f3D6",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-old.json\",\"a13fbd5dd793f72a2aa8b4ea07ea0fd61bbcc91e730adcb7d531064e46c450e4\",\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-new.json\",\"13c9d813f6cd056a7a570e8196366c857e469bbed3453d85d38808763e6ed492\",]\"method\":\"compare\"}"
+    }
+  },
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x3E5ee2507cc167C9925Bf10c67D7986581112024": "idle",
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "idle",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-old.json\",\"a13fbd5dd793f72a2aa8b4ea07ea0fd61bbcc91e730adcb7d531064e46c450e4\",\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-new.json\",\"13c9d813f6cd056a7a570e8196366c857e469bbed3453d85d38808763e6ed492\",]\"method\":\"compare\"}"
+        },
+        "eq_outputs": {
+          "0": {
+            "status": "return",
+            "payload": {
+              "readable": "{\"analysis\":{\"breaking\":[\"GET /items description changed from guaranteed ascending identifier order to no ordering guarantee\",]\"evidence_new\":[\"/paths/~1items/get/description\",]\"evidence_old\":[\"/paths/~1items/get/description\",]\"non_breaking\":[]\"status\":\"BREAKING\"}\"new\":\"{\\\"openapi\\\":\\\"3.0.0\\\",\\\"paths\\\":{\\\"/items\\\":{\\\"get\\\":{\\\"description\\\":\\\"Results may be returned in any order. No ordering guarantee is provided to clients.\\\",\\\"responses\\\":{\\\"200\\\":{\\\"description\\\":\\\"ok\\\"}}}}}}\\n\"\"old\":\"{\\\"openapi\\\":\\\"3.0.0\\\",\\\"paths\\\":{\\\"/items\\\":{\\\"get\\\":{\\\"description\\\":\\\"Results are always returned in ascending identifier order. Existing clients may rely on this ordering guarantee.\\\",\\\"responses\\\":{\\\"200\\\":{\\\"description\\\":\\\"ok\\\"}}}}}}\\n\"}"
+            }
+          }
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-old.json\",\"a13fbd5dd793f72a2aa8b4ea07ea0fd61bbcc91e730adcb7d531064e46c450e4\",\"https://raw.githubusercontent.com/moorisi/drift-fence/f2301bf6090659b353c2f56615908756c11085aa/schemas/guarantee-new.json\",\"13c9d813f6cd056a7a570e8196366c857e469bbed3453d85d38808763e6ed492\",]\"method\":\"compare\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "/py/libs/genlayer/gl/_internal/storage.py:21: UserWarning: Detected pickling storage class. Reading storage in nondet mode is not supported\n  warnings.warn(\n",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      }
+    ]
+  },
+  "gaslimit": 154,
+  "nonce": 154,
+  "created_at": "2026-10-11T21:18:59.261779+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf902ca819a808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b9026427241a990000000000000000000000007a413bb4ab62e31d62d4cd9efc8c8a8dae37fb42000000000000000000000000f566f45fcb44c6e44ba149003ba77acee9b0f3d60000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000197f90194b9019016046172677325cc0768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6d6f6f726973692f64726966742d66656e63652f663233303162663630393036353962333533633266353636313539303837353663313130383561612f736368656d61732f67756172616e7465652d6f6c642e6a736f6e840461313366626435646437393366373261326161386234656130376561306664363162626363393165373330616463623764353331303634653436633435306534cc0768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6d6f6f726973692f64726966742d66656e63652f663233303162663630393036353962333533633266353636313539303837353663313130383561612f736368656d61732f67756172616e7465652d6e65772e6a736f6e840431336339643831336636636430353661376135373065383139363336366338353765343639626265643334353364383564333838303837363365366564343932066d6574686f643c636f6d70617265000000000000000000008301e481a08b267099d7488a4e25877f8587c31b26589a9689cfa7a31ab4f101b2162a4286a02656e93651c8278d794164d156d9fe6e891dea63f61832215527c43a77402087"
+  },
+  "value_credited": false,
+  "sender": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+  "recipient": "0xf566F45Fcb44C6e44ba149003bA77ACee9b0f3D6",
+  "tx_id": "0x05133d5f1ccd2d8a88f74b7789df81cf167501c83e39cc98ef54fbb89842eba9",
+  "activator": "0x76c25AFC12c75485703cCFfd0083AA6201455B25",
+  "last_leader": "0x76c25AFC12c75485703cCFfd0083AA6201455B25",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25",
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "0x3E5ee2507cc167C9925Bf10c67D7986581112024",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88"
+    ],
+    "validator_votes_hash": [
+      "0xddc6a0b81cd37c698a416350ebbe2d979bed09959cfe101bdc596062ef7bc119",
+      "0x754c396d36a80373afde2e3ba3485c59ede2200fee2b0c38ba0b4251a59d626c",
+      "0x1fd8e6e637b5134d65ec51e45136e5f33c2d7a9518cd81b6e76ef9b844cdccf1",
+      "0x00312a03f05b25284b144c2cd8436b5167f22020fb586f575b7e8aa1d2066d57",
+      "0x6b4ee71a594670282b8fe22da4bbb75830c3014858757cd12d852d887dcc48c4"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      5,
+      5,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "IDLE",
+      "AGREE"
+    ]
+  },
+  "type": 2,
+  "status_name": "FINALIZED"
+}

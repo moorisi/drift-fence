@@ -4,3 +4,4 @@ __pycache__/
 .pytest_cache/
 artifacts/
 node_modules/
+proofs/recovered-state.json
