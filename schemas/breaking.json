@@ -1,0 +1,1 @@
+{"openapi":"3.0.0","paths":{"/items":{"post":{"requestBody":{"required":true},"responses":{"201":{"description":"created"}}}}}}
